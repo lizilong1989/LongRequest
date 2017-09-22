@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "LongRequestManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[LongRequestManager sharedInstance] downloadWithUrl:@"https://ss1.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/image/h%3D220/sign=8d02523e3fd3d539de3d08c10a85e927/f2deb48f8c5494eeb4f77dd924f5e0fe98257e1c.jpg"
+                                                 headers:nil
+                                         timeoutInterval:60
+                                                progress:^(int progress) {
+                                                    NSLog(@"%d",progress);
+                                                }
+                                              completion:^(NSData *aData, NSError *aError) {
+                                                  if (aError) {
+
+                                                  }
+                                              }];
     return YES;
 }
 

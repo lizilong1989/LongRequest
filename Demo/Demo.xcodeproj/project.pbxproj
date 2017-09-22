@@ -14,6 +14,7 @@
 		D2CB82F61F74BE04005FD8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CB82F41F74BE04005FD8F1 /* LaunchScreen.storyboard */; };
 		D2CB82F91F74BE04005FD8F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB82F81F74BE04005FD8F1 /* main.m */; };
 		D2CB83021F74BE3D005FD8F1 /* LongRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB83011F74BE3D005FD8F1 /* LongRequest.m */; };
+		D2CB83051F74BF22005FD8F1 /* LongRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB83041F74BF22005FD8F1 /* LongRequestManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		D2CB82F81F74BE04005FD8F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2CB83001F74BE3D005FD8F1 /* LongRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongRequest.h; sourceTree = "<group>"; };
 		D2CB83011F74BE3D005FD8F1 /* LongRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongRequest.m; sourceTree = "<group>"; };
+		D2CB83031F74BF22005FD8F1 /* LongRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongRequestManager.h; sourceTree = "<group>"; };
+		D2CB83041F74BF22005FD8F1 /* LongRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongRequestManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				D2CB83001F74BE3D005FD8F1 /* LongRequest.h */,
 				D2CB83011F74BE3D005FD8F1 /* LongRequest.m */,
+				D2CB83031F74BF22005FD8F1 /* LongRequestManager.h */,
+				D2CB83041F74BF22005FD8F1 /* LongRequestManager.m */,
 			);
 			name = src;
 			path = ../src;
@@ -159,6 +164,7 @@
 				D2CB82EE1F74BE04005FD8F1 /* ViewController.m in Sources */,
 				D2CB83021F74BE3D005FD8F1 /* LongRequest.m in Sources */,
 				D2CB82F91F74BE04005FD8F1 /* main.m in Sources */,
+				D2CB83051F74BF22005FD8F1 /* LongRequestManager.m in Sources */,
 				D2CB82EB1F74BE04005FD8F1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

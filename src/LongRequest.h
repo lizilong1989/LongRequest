@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "LongRequestManager.h"
+
 @interface LongRequest : NSObject
+
+- (instancetype)initWithTask:(NSURLSessionTask*)task
+             progressHandler:(LongHTTPRequestProgressHandler)handler
+                  andKeyPath:(NSArray*)keyPaths;
+
+- (void)cancel;
+
+- (void)invalid;
 
 @end
