@@ -49,7 +49,6 @@
 {
     if (_task) {
         [_task cancel];
-        [self invalid];
     }
 }
 

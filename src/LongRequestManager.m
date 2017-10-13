@@ -88,7 +88,7 @@ static LongRequestManager *instance = nil;
                                              progressHandler:^(int64_t total, int64_t now) {
                                                  if (aProgressBlock) {
                                                      if (total > 0) {
-                                                         aProgressBlock((int)(now/total*100));
+                                                         aProgressBlock((int)(now*100/total));
                                                      }
                                                  }
                                              } andCompletionHandler:^(NSInteger statusCode, NSString *response, NSError *error) {
