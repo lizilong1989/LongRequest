@@ -105,6 +105,7 @@ static LongRequestManager *instance = nil;
     [self _setRequest:request url:aUrl];
     if (dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, aTimeoutInterval * NSEC_PER_SEC))) {
         [request cancel];
+        [request invalid];
     } else {
         [request invalid];
     }
