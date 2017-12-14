@@ -38,6 +38,7 @@ static LongRequestManager *instance = nil;
 
 - (instancetype)init
 {
+    self = [super init];
     if (self) {
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
         configuration.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
